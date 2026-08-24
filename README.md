@@ -8,9 +8,6 @@
 > [!NOTE]
 > Git 子模块（submodule）适合在主仓库中引用外部仓库，并将其固定到特定提交。`git submodule` 用于管理主仓库与子模块之间的引用关系；`git -C <path>` 是 Git 的全局选项，用于在指定目录中执行普通 Git 命令，并非子模块专用。
 
-本仓库以 [`rxi/json.lua`](https://github.com/rxi/json.lua) 为例，演示子模块的添加、版本切换、初始化、同步与删除。
-
-
 ## 快速体验
 
 克隆主仓库并同时初始化子模块：
@@ -65,6 +62,9 @@ cd json.lua && git status
 | `git -C <path> log --oneline` | 以简洁格式查看子仓库提交历史 |
 
 可以简单记成：`git submodule` 管理引用关系，`git -C` 操作子仓库内部。
+
+> [!Tip]
+> 本仓库以 [`rxi/json.lua`](https://github.com/rxi/json.lua) 为例，演示子模块的添加、版本切换、初始化、同步与删除。
 
 ## 添加子模块
 
