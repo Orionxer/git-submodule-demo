@@ -5,10 +5,10 @@
 [![Language: Lua](https://img.shields.io/badge/language-Lua-2C2D72?logo=lua&logoColor=white)](https://www.lua.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
-## 快速体验
-
 > [!NOTE]
 > Git 子模块（submodule）适合在主仓库中引用外部仓库，并将其固定到特定提交。`git submodule` 用于管理主仓库与子模块之间的引用关系；`git -C <path>` 用于在子仓库目录中执行普通 Git 命令。
+
+## 快速体验
 
 克隆主仓库并同时初始化子模块：
 
@@ -287,12 +287,6 @@ git rm -- .gitmodules
 - 主仓库固定的是 commit，而不是 Tag 或分支名称。
 - `git submodule update` 默认检出主仓库记录的 commit，不会自动更新到远端最新版本。
 - 子模块常见的 detached HEAD 状态是固定依赖版本时的正常现象。
-
-## 开源协议
-
-当前项目基于 [MIT License](LICENSE) 开源。
-
-本项目引用的 [`rxi/json.lua`](https://github.com/rxi/json.lua) 同样采用 [MIT License](json.lua/LICENSE)。
 
 ## 参考资料
 
