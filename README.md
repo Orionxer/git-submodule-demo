@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
 > [!NOTE]
-> Git 子模块（submodule）适合在主仓库中引用外部仓库，并将其固定到特定提交。`git submodule` 用于管理主仓库与子模块之间的引用关系；`git -C <path>` 是 Git 的全局选项，用于在指定目录中执行普通 Git 命令，并非子模块专用。
+> Git 子模块（submodule）适合在主仓库中引用外部仓库，并将其固定到特定提交。`git submodule` 用于管理主仓库与子模块之间的引用关系；`git -C <path>` 用于在子仓库目录中执行普通 Git 命令。
 
 ## 快速体验
 
