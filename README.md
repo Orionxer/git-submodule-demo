@@ -131,6 +131,14 @@ git -C json.lua describe --tags --exact-match
 git -C json.lua rev-parse HEAD
 ```
 
+查看主仓库当前提交记录的子模块 gitlink：
+
+```sh
+git ls-tree HEAD -- json.lua
+```
+
+输出中的文件模式 `160000` 表示该条目是子模块，后面的哈希是主仓库固定的子模块 commit。
+
 查看子仓库自身的工作区状态：
 
 ```sh
