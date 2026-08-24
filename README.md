@@ -5,10 +5,11 @@
 [![Language: Lua](https://img.shields.io/badge/language-Lua-2C2D72?logo=lua&logoColor=white)](https://www.lua.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
-Git 子模块（submodule）适合在主仓库中引用外部仓库，并将其固定到特定提交。本仓库以 [`rxi/json.lua`](https://github.com/rxi/json.lua) 为例，演示子模块的添加、版本切换、初始化、同步与删除。
-
 > [!NOTE]
-> `git submodule` 用于管理主仓库与子模块之间的引用关系；`git -C <path>` 是 Git 的全局选项，用于在指定目录中执行普通 Git 命令，并非子模块专用。
+> Git 子模块（submodule）适合在主仓库中引用外部仓库，并将其固定到特定提交。`git submodule` 用于管理主仓库与子模块之间的引用关系；`git -C <path>` 是 Git 的全局选项，用于在指定目录中执行普通 Git 命令，并非子模块专用。
+
+本仓库以 [`rxi/json.lua`](https://github.com/rxi/json.lua) 为例，演示子模块的添加、版本切换、初始化、同步与删除。
+
 
 ## 快速体验
 
@@ -30,7 +31,7 @@ lua example.lua | jq
 
 ## 常用命令
 
-### `git submodule`
+### git submodule
 
 `git submodule` 管理主仓库与子模块之间的引用关系。主仓库不会保存子模块的全部文件，而是通过 `.gitmodules` 保存路径和远程地址，并在 Git 提交中记录子模块的特定 commit。
 
@@ -42,7 +43,7 @@ lua example.lua | jq
 | `git submodule deinit <path>` | 注销子模块的本地配置并清理工作区 |
 | `git submodule sync --recursive` | 将 `.gitmodules` 中的 URL 同步到本地配置 |
 
-### `git -C`
+### git -C
 
 `-C <path>` 表示执行后续 Git 命令前先切换到 `<path>`。它不会改变当前 Shell 的工作目录。
 
