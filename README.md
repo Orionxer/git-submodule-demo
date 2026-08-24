@@ -86,7 +86,8 @@ cat .gitmodules
 
 ## 指定子模块版本
 
-为了让依赖版本容易识别和维护，可以将子模块检出到项目发布的 Tag。Tag 本质上仍然是指向某个具体 commit 的名称，并不由 Git 保证其稳定性。
+> [!Important]
+> 添加子仓库的原则：主仓库添加子仓库的时候，通过子仓库提交的哈希进行链接（也叫注册`register`），因此需要在添加子仓库之后指定 **Release** 或 **Tag** 版本。一般处于 Release 或已经发布 Tag 状态下的哈希提交**处于稳定状态**，而且也便于维护。如果没有指定，则子仓库会在默认分支下挑选一个最新提交，但是该提交不确保稳定性。
 
 例如固定到 `v0.1.0`：
 
@@ -291,4 +292,4 @@ git rm -- .gitmodules
 ## 参考资料
 
 - [Pro Git：Git 工具—子模块](https://git-scm.com/book/zh/v2/Git-工具-子模块)
-- [`git-submodule` 命令文档](https://git-scm.com/docs/git-submodule)
+- [git-submodule 命令文档](https://git-scm.com/docs/git-submodule)
