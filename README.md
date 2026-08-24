@@ -5,10 +5,10 @@
 [![Language: Lua](https://img.shields.io/badge/language-Lua-2C2D72?logo=lua&logoColor=white)](https://www.lua.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
+## 快速体验
+
 > [!NOTE]
 > Git 子模块（submodule）适合在主仓库中引用外部仓库，并将其固定到特定提交。`git submodule` 用于管理主仓库与子模块之间的引用关系；`git -C <path>` 用于在子仓库目录中执行普通 Git 命令。
-
-## 快速体验
 
 克隆主仓库并同时初始化子模块：
 
@@ -63,10 +63,10 @@ cd json.lua && git status
 
 可以简单记成：`git submodule` 管理引用关系，`git -C` 操作子仓库内部。
 
+## 添加子模块
+
 > [!Tip]
 > 本仓库以 [`rxi/json.lua`](https://github.com/rxi/json.lua) 为例，演示子模块的添加、版本切换、初始化、同步与删除。
-
-## 添加子模块
 
 在主仓库根目录执行：
 
@@ -82,8 +82,7 @@ cat .gitmodules
 
 ![查看 .gitmodules](screenshot/gitmodules.png)
 
-> [!IMPORTANT]
-> 主仓库通过 `gitlink` 记录子模块的具体 commit，而不是分支或 Tag。执行 `git submodule add` 时，Git 默认检出远端默认分支当时的 HEAD；主仓库保存该 commit 后，子模块不会自动跟随远端更新。
+主仓库通过 `gitlink` 记录子模块的具体 commit，而不是分支或 Tag。执行 `git submodule add` 时，Git 默认检出远端默认分支当时的 HEAD；主仓库保存该 commit 后，子模块不会自动跟随远端更新。
 
 ## 指定子模块版本
 
