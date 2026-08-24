@@ -215,6 +215,9 @@ git -C json.lua status
 
 ```sh
 git submodule set-url json.lua https://github.com/rxi/json.lua.git
+```
+
+```sh
 git submodule sync --recursive
 ```
 
