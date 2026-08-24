@@ -291,4 +291,4 @@ git rm -- .gitmodules
 ## 参考资料
 
 - [Pro Git：Git 工具—子模块](https://git-scm.com/book/zh/v2/Git-工具-子模块)
-- [`git-submodule` 命令文档](https://git-scm.com/docs/git-submodule)
+- [git-submodule 命令文档](https://git-scm.com/docs/git-submodule)
