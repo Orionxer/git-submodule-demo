@@ -15,6 +15,9 @@
 ```sh
 git clone --recurse-submodules https://github.com/Orionxer/git-submodule-demo.git
 cd git-submodule-demo
+```
+运行示例lua
+```sh
 lua example.lua
 ```
 
