@@ -293,7 +293,6 @@ rm -rf -- .git/modules/json.lua
 git rm -- .gitmodules
 ```
 
-上述命令只产生待提交的删除变化，不会自动创建提交。
 
 ## 核心理解
 
